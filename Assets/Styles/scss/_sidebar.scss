@@ -1,0 +1,131 @@
+.region-sidebar{
+  h2{
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+  .block{
+    margin-bottom: 50px;
+  }
+}
+
+#block-hierarchicaltaxonomymenu{
+
+  ul.menu{
+    background-color: $light4;
+    padding: 20px;
+    border-radius: 3px;
+    margin: 0;
+    li{
+      &.menu-item--expanded{
+        list-style: none;
+      }
+      ul{
+        margin: 0;
+        padding: 0;
+        li{
+          &:last-of-type{
+            a{
+              border-bottom: 1px solid $light3;
+            }
+          }
+          a{
+            padding-left: 35px;
+          }
+        }
+      }
+      a{
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        text-decoration: none;
+        color: $light;
+        border-bottom: 1px solid $light3;
+        @include transition(300ms);
+        &:hover{
+          color: $dark;
+        }
+      }
+      &:last-of-type{
+        a{
+          border:none;
+        }
+      }
+    }
+    &.block-taxonomymenu__menu-item{
+      li{
+        &:last-of-type{
+          a{
+            border:none;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+#block-views-block-tags-block-1{
+  .view-content{
+    display: flex;
+    flex-wrap:wrap;
+
+  }
+}
+#block-views-block-categories-block-3{
+  .item-list{
+    &>ul{
+      list-style: none;
+      background-color: $light4;
+      padding: 20px;
+      border-radius: 3px;
+      margin: 0;
+      li{
+        margin-left: 0;
+        &.menu-item--expanded{
+          list-style: none;
+        }
+        ul{
+          margin: 0;
+          padding: 0;
+          li{
+            &:last-of-type{
+              a{
+                border-bottom: 1px solid $light3;
+              }
+            }
+            a{
+              padding-left: 35px;
+            }
+          }
+        }
+        a{
+          display: inline-block;
+          width: 100%;
+          padding: 10px;
+          text-decoration: none;
+          color: $light;
+          border-bottom: 1px solid $light3;
+          @include transition(300ms);
+          &:hover{
+            color: $dark;
+          }
+        }
+        &:last-of-type{
+          a{
+            border:none;
+          }
+        }
+      }
+
+    }
+  }
+  &.view-categories{
+    li{
+      &:last-of-type{
+        a{
+          border:none;
+        }
+      }
+    }
+  }
+}

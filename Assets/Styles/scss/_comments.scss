@@ -1,0 +1,166 @@
+#comments{
+  border-top: 1px solid $light3;
+  margin-top: 50px;
+  padding-top: 30px;
+  .comment-form__title{
+    margin-top: 40px;
+    font-size: 20px;
+    display: none;
+  }
+  a{
+    color:$blue;
+    text-decoration: none;
+  }
+  .indented{
+    margin-left: 40px;
+  }
+  .ajax-comments-form-reply{
+    margin-left: 40px;
+    background-color: $light6;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+  .js-filter-wrapper,
+  .js-form-item-subject-0-value{
+    display: none;
+  }
+  .form-actions{
+    justify-content: flex-start;
+    display: flex;
+    margin: 0;
+    flex-direction: row-reverse;
+    .js-form-submit{
+      width: 200px;
+      margin: 0 0 0 10px;
+      color:$dark;
+      background-color: $light2;
+      border-color: $light2;
+      &:hover{
+        background-color: $light3;
+      }
+    }
+  }
+}
+
+#edit-comment-body-0-format{
+  display: none;
+}
+.ajax-comments-form-add,
+.ajax-comments-form-edit{
+  background-color: $light6;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 20px;
+  label{
+    display: none;
+  }
+  .form-item-comment-body-0-value{
+    margin-top: 0;
+  }
+}
+.field--name-comment{
+  article{
+    &.comment {
+      mark{
+        position: absolute;
+        right: 0;
+        padding: 5px 20px;
+        border-radius: 4px;
+        z-index: 10;
+      }
+      .comment--meta{
+        background-color: $light6;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        padding: 20px;
+        //border-bottom: 1px solid $light3;
+        display: flex;
+        .image-style-thumbnail{
+          width: 50px;
+          height: 50px;
+          min-width: 50px;
+          border-radius: 50%;
+          margin-right: 20px;
+        }
+        .content{
+          width: calc(100% - 60px);
+        }
+        .comment--submitted{
+          color: $light;
+          font-size: 12px;
+          margin-bottom: 10px;
+          font-weight: 500;
+          .author{
+            color: $blue;
+
+          }
+          .created{
+            padding-left: 20px;
+          }
+          i{
+            margin-right: 5px;
+          }
+        }
+      }
+      .comment--content{
+        .links{
+          display: flex;
+          padding-left: 0;
+          margin: 0;
+          justify-content: end;
+          li{
+            margin: 0 0 0 10px;
+            padding: 0;
+          }
+          a{
+            padding: 5px 15px;
+            display: inline-block;
+            border-radius: 3px;
+            color: $dark !important;
+            background-color: $light3;
+            font-size: 12px;
+            font-weight: 500;
+            @include transition(300ms);
+            &:hover{
+              background-color: $light2;
+            }
+            &.js-use-ajax-comments{
+              &:before{
+                margin-right: 5px;
+                font-weight: 900;
+                font-family: "Font Awesome 6 Free";
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-font-smoothing: antialiased;
+                display: var(--fa-display,inline-block);
+                font-style: normal;
+                font-variant: normal;
+                line-height: 1;
+                text-rendering: auto;
+              }
+            }
+            &.js-ajax-comments-delete{
+              &:before{
+                content: "\f1f8";
+              }
+            }
+            &.js-ajax-comments-edit{
+              &:before{
+                content: "\f044";
+              }
+            }
+            &.js-ajax-comments-reply{
+              &:before{
+                content: "\f3e5";
+              }
+            }
+          }
+        }
+      }
+      .profile{
+
+      }
+    }
+  }
+
+}

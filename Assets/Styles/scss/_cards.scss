@@ -1,0 +1,121 @@
+.views-grids{
+  .category-links{
+    margin-bottom: 10px;
+    i{
+      color: $blue;
+    }
+  }
+
+   
+
+}
+.views-grid{
+  padding: 5px;
+}
+ .node--view-mode-card{
+      margin: 10px 0;
+      padding: 20px 20px 10px 20px;
+      border-radius: 4px;
+      background-color: $light6;
+      @include transition(300ms);
+      &:hover{
+        background-color: $light5;
+      }
+      h2{
+        font-size: 20px;
+        a{
+          color: $dark;
+        }
+      }
+      .node--footer{
+        padding-bottom: 0;
+      }
+      .field--name-field-tags {
+        justify-content: start;
+        flex-wrap: wrap;
+        .field__item{
+        }
+      }
+    }
+
+.category-links{
+  display: flex;
+  align-items: center;
+  i{
+    margin-right: 5px;
+  }
+}
+.form-item-field-category-target-id,
+.form-item-field-tags-target-id{
+  display: none;
+}
+#views-exposed-form-knowledge-base-page-1{
+  .form--inline {
+    display: flex;
+      width: 100%;
+
+    padding: 0 10px;
+    .js-form-type-textfield{
+      width: calc(100% - 132px);
+    }
+    .js-form-item-type-1{
+      order:2;
+    }
+    input[type="text"]{
+      border-color: $light2;
+      width: 100%;
+    }
+    input[type="submit"]{
+      margin: 0;
+      height: 40px;
+      line-height: 40px;
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: $light2;
+      border-color: $light2;
+      color: $dark;
+      &:hover{
+        background-color: $light1;
+        border-color: $light1;
+      }
+    }
+  }
+}
+
+.form-select.bef-links{
+  border:none;
+  padding: 0;
+  ul{
+    list-style: none;
+    display: flex;
+    li{
+      margin-left: 10px;
+    }
+    a{
+      font-weight: 500;
+      display: inline-block;
+      padding: 0 30px;
+      margin: 0;
+      height: 40px;
+      line-height: 40px;
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: $light2;
+      border-color: $light2;
+      color: $dark;
+      &.bef-link--selected{
+        background-color: $light1;
+        color: $white;
+      }
+      &:hover{
+        background-color: $light1;
+        border-color: $light1;
+      }
+    }
+  }
+}
+.cards-header{
+  display: flex;
+  justify-content: space-between;
+  color: $light1;
+}
