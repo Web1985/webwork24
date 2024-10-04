@@ -4,14 +4,18 @@ import Card from "@/app/ui/knolagebase/card";
 export default async function Page(){
     const articles = await getArticles();
     return(
-      <main>
+      <div>
 
-          <h1>Knowlage Base</h1>
           {articles.map((article)=>{
               return(
-                  <Card data={article}/>
+                  <>
+                      <h2>{article.title}</h2>
+
+                      <Card data={article}/>
+                  </>
+
               )
           })}
-      </main>
+      </div>
     );
 }
