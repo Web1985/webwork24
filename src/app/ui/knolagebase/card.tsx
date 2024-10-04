@@ -9,8 +9,6 @@ export default function Card(data){
                         <a href="/knowledge-base?title=&amp;field_category_target_id=53" className="category-list"
                            name="field_category_target_id[53]">React Native</a>
                     </div>
-
-
                 </div>
                 <div className="comment-count"><i className="fa-solid fa-comment" aria-hidden="true"></i> 0</div>
             </div>
