@@ -1,4 +1,4 @@
-import Image from "next/image";
+//import Image from "next/image";
 
 export default function Home() {
   return (
@@ -38,7 +38,7 @@ export default function Home() {
                                             className="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item">
                                           <div className="row text-center">
                                             <h2>HELLO, I AM <strong>VIKTOR</strong></h2>
-                                            <h1>I'M A WEBDEVELOPER</h1>
+                                            <h1>I AM A WEBDEVELOPER</h1>
                                           </div>
                                         </div>
                                       </div>
