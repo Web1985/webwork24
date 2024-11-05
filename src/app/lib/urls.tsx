@@ -14,7 +14,9 @@ export const API_URL = '/api/';
 export const URLS = {
     HOME: SERVER_URL+API_URL + 'home',
     KNOWLEDGE_BASE: SERVER_URL+API_URL + 'knowledge-base',
-    ARTICLE: SERVER_URL+API_URL+'node',
+    ARTICLE: SERVER_URL+API_URL+'knowledge-base/node',
+    PARENT: SERVER_URL+API_URL+'parent',
+    CATEGORY: SERVER_URL+API_URL+'category',
     CATEGORIES: SERVER_URL+API_URL + 'categories',
     CARD_ITEM: SERVER_URL+API_URL + 'card',
     SESSION: SERVER_URL+'/session/token',

@@ -10,9 +10,12 @@ export default async function Page({params} :{params: {id : string}}){
     }
     return (
         <article>
-            <h1>ARTICLE</h1>
+
+            <h1>{
+                article.title
+            }</h1>
             <div>
-              
+
             </div>
 
         </article>
